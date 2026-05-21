@@ -1,0 +1,9 @@
+node_modules
+store.json
+*.png
+*.gif
+*.md
+.git
+.github
+.eccm-version
+LICENSE

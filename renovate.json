@@ -1,0 +1,23 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"config:recommended",
+		":automergeMinor",
+		":automergeDigest",
+		":skipStatusChecks",
+		":semanticCommits",
+		":dependencyDashboard",
+		":disableRateLimiting",
+		":automergeBranch"
+	],
+	"customManagers": [
+		{
+			"customType": "regex",
+			"fileMatch": ["^\\.eccm-version$"],
+			"matchStrings": ["(?<currentValue>.+)"],
+			"depNameTemplate": "bijomaru78/eccm",
+			"datasourceTemplate": "github-releases",
+			"versioningTemplate": "semver"
+		}
+	]
+}

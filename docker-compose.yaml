@@ -1,0 +1,11 @@
+services:
+  eccm:
+    image: ghcr.io/alessandrozanatta/eccm-server:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - eccm-data:/data
+    restart: unless-stopped
+
+volumes:
+  eccm-data:
