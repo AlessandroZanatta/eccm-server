@@ -1,14 +1,9 @@
-FROM node:24-alpine AS deps
+FROM node:24-alpine AS build
 WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile
-
-FROM node:24-alpine AS build
-WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
-COPY package.json tsconfig.json ./
 COPY src ./src
-RUN node_modules/.bin/tsc
+RUN yarn build
 
 FROM node:24-alpine
 WORKDIR /app
@@ -24,9 +19,7 @@ RUN apk add --no-cache tini curl && \
     rm eccm.tar.gz && \
     apk del curl
 
-COPY --from=deps /app/node_modules ./node_modules
-COPY --from=build /app/dist ./dist
-COPY package.json ./
+COPY --from=build /app/dist/index.js ./dist/index.js
 
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD ["node", "dist/index.js"]

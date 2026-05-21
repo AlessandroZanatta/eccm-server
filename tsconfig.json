@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "CommonJS",
+    "module": "Preserve",
     "moduleResolution": "Bundler",
-    "outDir": "./dist",
-    "rootDir": "src",
+    "noEmit": true,
     "strict": true,
+    "verbatimModuleSyntax": true,
     "skipLibCheck": true,
     "types": ["node"]
   },
