@@ -1,11 +1,11 @@
-FROM node:24-alpine AS build
+FROM node:26-alpine AS build
 WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile
 COPY src ./src
 RUN yarn build
 
-FROM node:24-alpine
+FROM node:26-alpine
 WORKDIR /app
 
 ARG ECCM_VERSION
