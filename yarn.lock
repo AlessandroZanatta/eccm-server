@@ -133,9 +133,9 @@
   integrity sha512-5ebpxr3nWMzrL/rnUI755Jkuee0bHL/Gq0WTF9lvcpv73wAp5eu8MfBUgWK9bhWvZjj7yX8etf/8tI8Ney695g==
 
 "@hono/node-server@^2.0.0":
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/@hono/node-server/-/node-server-2.1.6.tgz#2d24447fbe3ac835ec2bf2fe1828a21f294799e4"
-  integrity sha512-p/KH9MnfNcsm3sR6x4lNgm5j+QN4Et8srKredl9DZfXiyZ1UQ3aQ2YVpFLbqktYN5JI+DB+VZFKM2PqE5hLKjQ==
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/@hono/node-server/-/node-server-2.1.7.tgz#71f7086ea77a18c3fa10f0943be879c5ea8d8931"
+  integrity sha512-Wr0E6S+v2Bw9FkpGNP5BQ5QbJvclUa06UVehd65WFZe6XeJwbrKQQ5wPDevc0IC+QyzbO7v3Llh5uo45IZcSnA==
 
 "@types/node@^25.9.1":
   version "25.9.9"
