@@ -182,9 +182,9 @@ fsevents@~2.3.3:
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 hono@^4.7.0:
-  version "4.13.19"
-  resolved "https://registry.yarnpkg.com/hono/-/hono-4.13.19.tgz#262deddee9ca079195f23ee0c6419eca8027ea2d"
-  integrity sha512-KmXvQAXwcAHV+muzbIwoJ23niEB5nMoDVr9WcRkU8mvjUECm/1+7v4Jgp7P7a+H6MLFrh+vXrGonGrGS+RQfkA==
+  version "4.13.20"
+  resolved "https://registry.yarnpkg.com/hono/-/hono-4.13.20.tgz#52194d4d764c07f74648c7c8d5c739751643628f"
+  integrity sha512-xo6gecEJQ+CjTtOUUbcLHE8CdRKMeF4qITe+DT+OhFnSUmZR/ZBa9XavAfiGh4HlukmlaHFdaK4dz5tkTYFNmA==
 
 tsx@^4.21.0:
   version "4.23.15"
